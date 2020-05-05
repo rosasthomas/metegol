@@ -1,0 +1,7 @@
+{
+  "name": "metegol",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
