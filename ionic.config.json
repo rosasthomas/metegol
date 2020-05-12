@@ -1,7 +1,8 @@
 {
   "name": "metegol",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }

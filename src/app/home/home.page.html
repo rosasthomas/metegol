@@ -1,20 +1,14 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<div class="container">
+  <ion-backdrop class="backdrop" hidden></ion-backdrop>
+  <div class="atras" (click)="navegar('login')"><ion-icon name="caret-back-circle-outline"></ion-icon></div>
+  <div class="panel" id="panel">
+    <span class="titulo">Panel de Administrador</span>
   </div>
-</ion-content>
+  <button id="crear" (click)="navegar('partido')">Crear Partido</button>
+  <button (click)="navegar('listado-partidos')">Listado de Partidos</button>
+  <button (click)="navegar('top-jugadores')">Top de Jugadores</button>
+</div>
+<div class="spinner-container" hidden id="casa">
+<div class="spinner-items"> 
+</div>
+</div>

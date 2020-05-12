@@ -1,0 +1,89 @@
+div.container{
+    background-image: url("../../assets/fulbito.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: lightgrey;
+  
+    font-weight: bold;
+  
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  button{
+    font-size: 1.5em;
+    color: black;
+    width: 80%;
+    margin-bottom: 7%;
+    height: 18vh;
+    outline: none;
+    background-color: rgb(178, 251, 187);
+    border: dotted 3px black;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  div.atras{
+    position: absolute;
+    top: 1%;
+    left: 2%;
+    font-size: 282%;
+  }
+  
+  
+  div.panel{
+    border-radius: 5px;
+    border: dotted 5px white;
+    width: 75%;
+    height: 25%;
+    background-color: rgb(178, 251, 187);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  span.titulo {
+    font-size: 2.5em;
+  }
+  
+  button:hover{
+      color: white;
+      transform: scale(1.1);
+  }
+  
+  /* #region spinner */
+  .spinner-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(1, 1, 1, 0.789);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 300;
+  }
+  .spinner-items {
+    
+    width: 50px;
+    height: 50px;
+    background-image: url("../../assets/logo-TR-50x50.png");
+    
+    -webkit-animation: spinner-loading linear .8s infinite;
+    animation: spinner-loading linear .8s infinite;
+  }
+  
+  @keyframes spinner-loading{
+    0% {
+        transform: rotate(0deg)
+    } to {
+        transform: rotate(1turn)
+    }
+  } 
+  /* #endregion */
+  

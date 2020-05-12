@@ -1,0 +1,28 @@
+<div class="container"> 
+  <ion-backdrop class="backdrop" hidden></ion-backdrop>
+  <form (ngSubmit)="registrar()" class="form">
+    <div class="errorUser" id="errorUser" ><span>Correo o contraseña incorrecto</span></div>
+    <div class="correo">
+        <label class="correo" for="correo">Correo Electr&oacute;nico</label>
+        <input class="correo" (click)="limpiarErrores()" max-length="30" type="email" name="correo" id="correo">
+        <div class="errorEmail" id="errorEmail" ><span>Formato inv&aacute;lido</span></div>
+      </div>
+      <div class="pass">
+        <label class="pass" for="pass">Contraseña</label>
+        <input class="pass" (click)="limpiarErrores()" min-length="4" max-length="20" type="password" name="pass" id="pass">
+        <div class="errorPass" id="errorPass" ><span>Formato inv&aacute;lido</span></div>
+      </div>
+      <div class="elegir">
+        <img class="tarjetita" src="../../../assets/tarjeta.png" *ngFor="let usuario of usuarios | async" id="users" (click)="completar(usuario.correo)" width="15%">
+      </div>
+      <div class="ingresar">
+        <button class="ingresar" type="submit">Ingresar</button>
+        <button class="limpiar" (click)="limpiarErrores()" type="reset">Limpiar</button>
+      </div>
+  
+  </form>
+</div>
+<div class="spinner-container" hidden id="spinner">
+    <div class="spinner-items">
+    </div>
+  </div>

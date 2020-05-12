@@ -1,0 +1,78 @@
+.splash{
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(205, 205, 205);
+}
+
+p{
+  position: absolute;
+  top: 85%;
+  color: black;
+  font-size: 110%;
+}
+.c4 {
+    
+   width: 96px;
+   height: 96px;
+   &:before {
+    content: "";
+    display: block;
+    width: 96px;
+    border-radius: 50%;
+    height: 1.625em;
+    background: hsla(0, 0%, 0%, 0.1);
+    display: block;
+    position: absolute;
+    bottom: 12.9em;
+    transform: scale(0.5);
+    animation: shadow 1s linear infinite
+  }
+  &:after {
+    content: "";
+    display: block;
+    width: 96px;
+   height: 96px;
+    background-image: url("../assets/drawable-xhdpi-icon.png");
+    position: relative;
+    top: -2.500em;
+    margin: 0 0.179em;
+    animation: jellijump 1s linear infinite 0.6s;
+  }
+  
+  }
+  
+  @keyframes jellijump {
+    5% {
+      top: -2.500em;
+    }
+    20% {
+      top: -1.875em;
+    }
+    40% {
+      top: -0.625em;
+    }
+    45% {
+    }
+    50% {
+      top: 0em;
+    }
+    60% {
+      top: -0.625em;
+    }
+    80% {
+      top: -1.875em;
+    }
+    95% {
+      top: -2.500em;
+    }
+  }
+  
+  @keyframes shadow {
+    0% {transform: scale(0.5);}
+    50% {transform: scale(1);}
+    100% {transform: scale(0.5);}
+  }
